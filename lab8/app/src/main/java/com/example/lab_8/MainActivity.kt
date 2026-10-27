@@ -13,7 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.lab_8.ui.theme.Lab8Theme
 
-class MainActivity : ComponentActivity() {
+class MainActivity : ComponentActivity() { // this is a test
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
