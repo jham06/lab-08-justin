@@ -51,19 +51,19 @@ class WizardTest {
     fun testing_search() {
         evilWizard.train()
 
-        assertEquals(11, evilWizard.spellPower)
+        assertEquals(11, evilWizard.spellPower) //  since enough mana, apply spellPower + 1, 10+1 = 11
 
-        assertEquals(25, evilWizard.mana)
+        assertEquals(25, evilWizard.mana) // 30 - 5 = 25
     }
 
     @Test
     fun test_notEnough() {
-        evilWizard.mana = 4
+        evilWizard.mana = 4 // make is so not enough
 
         evilWizard.train()
 
-        assertEquals(4, evilWizard.mana)
-
-        assertEquals(10, evilWizard.spellPower)
+        assertEquals(4, evilWizard.mana) // Since not enough, should do nothing and returns 4
+ 
+        assertEquals(10, evilWizard.spellPower) // The spellpower doesnt change either...
     }
 }
